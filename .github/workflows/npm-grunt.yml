@@ -1,10 +1,11 @@
 name: NodeJS with Grunt
 
 on:
+  workflow_dispatch:
   push:
-    branches: [ "master", "gh-pages" ]
+    branches: [ "master", "github-pages" ]
   pull_request:
-    branches: [ "master", "gh-pages" ]
+    branches: [ "master", "github-pages" ]
 
 jobs:
   build:
@@ -21,7 +22,7 @@ jobs:
       uses: Vent-Finance/branch_creator@v1.0.0
       with:
     # Branch name
-       name: gh-pages
+       name: github-pages
     - name: Checkout 
       uses: actions/checkout@v3
 
@@ -40,7 +41,7 @@ jobs:
       uses: codingforentrepreneurs/action-branch-to-branch@1.0.0
        with:
     # Branch to be pushed to
-        destination_branch: gh-pages
+        destination_branch: github-pages
     # Branch to be duplicated
         source_branch: master
     # Write the commit message

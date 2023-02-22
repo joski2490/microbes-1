@@ -39,10 +39,8 @@ jobs:
     # You may pin to the exact commit or the version.
     # uses: codingforentrepreneurs/action-branch-to-branch@e818fee4f286fa5375ef6b2220e96fb96e419f39
       uses: codingforentrepreneurs/action-branch-to-branch@1.0.0
-       with:
+      with:
     # Branch to be pushed to
         destination_branch: github-pages
     # Branch to be duplicated
         source_branch: master
-    # Write the commit message
-        commit_message: # optional, default is Automated commit from action

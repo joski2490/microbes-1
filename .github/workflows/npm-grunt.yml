@@ -2,9 +2,9 @@ name: NodeJS with Grunt
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "master", "gh-pages" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "master", "gh-pages" ]
 
 jobs:
   build:

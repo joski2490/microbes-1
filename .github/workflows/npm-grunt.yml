@@ -3,9 +3,9 @@ name: NodeJS with Grunt
 on:
   workflow_dispatch:
   push:
-    branches: [ "master", "github-pages" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "master", "github-pages" ]
+    branches: [ "master" ]
 
 jobs:
   build:

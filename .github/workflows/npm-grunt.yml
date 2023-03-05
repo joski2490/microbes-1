@@ -41,6 +41,6 @@ jobs:
       uses: codingforentrepreneurs/action-branch-to-branch@1.0.0
       with:
     # Branch to be pushed to
-        destination_branch: github-pages
+        destination_branch: master
     # Branch to be duplicated
         source_branch: master
